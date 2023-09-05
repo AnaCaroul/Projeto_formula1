@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 45px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  gap: 2em;
+}
+
+.tabs button {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background-color: #111;
+  color: #fff;
+}
+
+.knockout_table{
+  margin: auto;
+}
+
