@@ -1,6 +1,14 @@
+
 * {
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+.conteudo{
+  position: relative;
+  margin-top: 10vh;
+
 }
 
 h1 {
@@ -25,6 +33,7 @@ h1 {
   padding: 10px;
   font-weight: bold;
   cursor: pointer;
+  color: #111;
 }
 
 .tabs button.active {
@@ -34,5 +43,13 @@ h1 {
 
 .knockout_table{
   margin: auto;
+}
+
+
+.tab_content {
+  margin-top: 5vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 

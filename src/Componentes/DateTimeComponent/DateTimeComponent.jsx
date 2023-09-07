@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import './DateTimeComponent.css'
 
-function DateTimeComponent({corrida}){
+function DateTimeComponent({race}){
     return(
         <h3 className="data">
-           {corrida.data}
+           {race.data}
         </h3>
     )
 }

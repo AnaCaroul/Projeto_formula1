@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import './HeaderComponentes.css'
 
-function HeaderComponentes({corrida}){
+function HeaderComponentes({race}){
     return(
         <h2 className="Titulo">
-        { corrida.corrida }
+        { race.corrida }
         </h2>
     )
 } 

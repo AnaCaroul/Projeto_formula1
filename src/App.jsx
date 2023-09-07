@@ -2,6 +2,9 @@
 import './App.css'
 import Header from './Componentes/Header/Header.jsx'
 import { useState } from 'react'
+import TournamentBracket from './Componentes/TournamentBracket/TournamentBracket.jsx'
+import TournamentBracket2 from './Componentes/TournamentBracket2/TournamentBracket2.jsx'
+import TournamentBracket3 from './Componentes/TournamentBracket3/TournamentBracket3.jsx'
 
 function App() {
 
@@ -14,11 +17,11 @@ function App() {
   function renderTabContent() {
     switch(activeTab) {
       case 'Tab 1':
-        return <TournamentBracket fase='corridas' />
+        return <TournamentBracket fase='races' />
       case 'Tab 2':
-        return <TournamentBracket fase='corridas' />
+        return <TournamentBracket2 fase='drives' />
       case 'Tab 3':
-        return <section className='cards'><Card /></section>
+        return <TournamentBracket3 fase='team' />
     }
   }
   
@@ -26,6 +29,9 @@ function App() {
   return (
     <>
       <Header />
+
+      <div className='conteudo'>
+
       <h1>
         Formula 1 - 2023
       </h1>
@@ -44,24 +50,25 @@ function App() {
          className={ activeTab === 'Tab 2' ? 'active' : '' }
          onClick={() => handleChangeTab('Tab 2')}
         >
-          Past
+          Drivers
         </button>
 
         <button
          className={ activeTab === 'Tab 3' ? 'active' : '' }
          onClick={() => handleChangeTab('Tab 3')}
        >
-          Drives
+          Team
         </button>
 
       </div>
 
-      {/* <div className='tab_content'>
+      <div className='tab_content'>
           { renderTabContent() }
-        </div> */}
-
-
+        </div>
+        
       </section>
+      </div>
+      
     </>
   )
 }

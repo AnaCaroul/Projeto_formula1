@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import './ImageCountry.css'
 
-function ImageCountry({corrida}){
+function ImageCountry({race}){
 
     return(
-        <img src={corrida.pais.banderia}   alt={corrida.pais.nome}/>
+        <img 
+        style={{borderRadius: "50%", width: "100px", height: "100px", backgroundColor: "white"}}
+        src={race.bandeira} alt={race.nome_do_pais}/>
     )
 }
 

@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import './Winner.css'
 
-function Winner({corrida}){
+function Winner({race}){
     return(
-        <h4>Vencedor: {corrida.vencedor}</h4>
+        <h4>Vencedor: {race.vencedor}</h4>
     )
 }
 export default Winner;

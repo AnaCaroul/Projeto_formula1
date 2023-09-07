@@ -1,0 +1,23 @@
+.driver {
+    border: 1px solid #38383f;
+    border-radius: 10px;
+    background-color: #38383f;
+    /* box-shadow: 2px 2px 2px #3f3f47; */
+    margin-bottom: 4vh;
+    color: white;
+    width: 35vw;
+    height: 34vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 0.7em;
+}
+
+.driver_detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
